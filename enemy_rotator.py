@@ -32,9 +32,9 @@ class EnemyRotate(Character):
 
     def update(self):
         # rotate images
-        self.image_index = self.image_index + 1 if self.image_index < (len(self.LODE_IMAGES_LOC)-1) * 2 else 0
+        self.image_index = self.image_index + 1 if self.image_index < (len(self.LODE_IMAGES_LOC)-1) * 3 else 0
         cx,cy = self.rect.centerx, self.rect.centery
-        self.image = self.images[self.image_index % 2]
+        self.image = self.images[self.image_index % 3]
         self.rect.center = (cx,cy)
 
         # move linearly    

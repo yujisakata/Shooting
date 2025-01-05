@@ -41,11 +41,11 @@ class Main:
 
         # スプライトの作成
         player = Player()
-        enemy = EnemyRotate(None)
-        enemy2 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 1)
-        enemy3 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 2)
-        enemy4 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 3)
-        enemy5 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 4)
+        enemy = EnemyRotate (None,_gc.SMALL_ENEMIES_SIZE[0] * 20 )
+        enemy2 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 21 )
+        enemy3 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 22 )
+        enemy4 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 23 )
+        enemy5 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 24 )
 
         # スプライトグループを作成
         all_sprites = pygame.sprite.Group()
