@@ -42,10 +42,14 @@ class Main:
         # スプライトの作成
         player = Player()
         enemy = EnemyRotate(None)
+        enemy2 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 1)
+        enemy3 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 2)
+        enemy4 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 3)
+        enemy5 = EnemyRotate(None,_gc.SMALL_ENEMIES_SIZE[0] * 4)
 
         # スプライトグループを作成
         all_sprites = pygame.sprite.Group()
-        all_sprites.add(player,enemy)
+        all_sprites.add(player,enemy,enemy2,enemy3,enemy4,enemy5) 
 
         # メインループ
         running = True
